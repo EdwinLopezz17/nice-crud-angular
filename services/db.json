@@ -1,0 +1,24 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Leonel",
+      "lastName": "Messi",
+      "dorsal": 30,
+      "club": "PSG",
+      "country": "Argentina",
+      "birthdate": "2016-02-12T05:00:00.000Z",
+      "sex": "Male"
+    },
+    {
+      "id": 2,
+      "name": "Ronaldo",
+      "lastName": "Dos Santos",
+      "dorsal": 7,
+      "club": "Alnasser",
+      "country": "Portugal",
+      "birthdate": "2016-02-12T05:00:00.000Z",
+      "sex": "Male"
+    }
+  ]
+}
