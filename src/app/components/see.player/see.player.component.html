@@ -1,0 +1,34 @@
+
+<div class="container">
+  <mat-card>
+    <mat-grid-list cols="2" rowHeight="3:1">
+      <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <mat-card-content>About {{player?.name}} {{player?.lastName}}</mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="3">
+        <img src="./assets/images/player.png">
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card-content>Club: {{player?.club}}</mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card-content>Country: {{player?.country}}</mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card-content>Dorsal: {{player?.dorsal}}</mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card-content>Birth Date: {{player?.birthdate | date: 'dd/MM/yyyy'}}</mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card-content>Generate: {{player?.sex}}</mat-card-content>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+  </mat-card>
+
+
+
+</div>
+
+

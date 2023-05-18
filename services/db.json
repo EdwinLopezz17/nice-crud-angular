@@ -21,7 +21,7 @@
       "sex": "Male"
     },
     {
-      "name": "Neymar",
+      "name": "Nymar",
       "lastName": "Santos",
       "dorsal": 10,
       "club": "PSG",
@@ -29,16 +29,6 @@
       "birthdate": "1992-02-05T05:00:00.000Z",
       "sex": "male",
       "id": 3
-    },
-    {
-      "name": "Kevin",
-      "lastName": "Debrine",
-      "dorsal": 9,
-      "club": "no se xd",
-      "country": "Belgica",
-      "birthdate": "2023-05-11T05:00:00.000Z",
-      "sex": "male",
-      "id": 4
     }
   ]
 }

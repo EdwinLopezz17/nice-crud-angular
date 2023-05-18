@@ -14,12 +14,20 @@ export class PlayersService {
     return this._http.get<Player>('http://localhost:3000/players');
   }
 
+  getPlayerById(id:number){
+    return this._http.get<Player>(`http://localhost:3000/players/${id}`)
+  }
+
   deletePlayerById(id:number){
-    return this._http.delete(`http://localhost:3000/players/${id}`)
+    return this._http.delete<Player>(`http://localhost:3000/players/${id}`)
   }
 
   addPlayer(data:Player){
     return this._http.post('http://localhost:3000/players',data);
+  }
+
+  updatePlayer(id:number, data:Player):Observable<any>{
+    return this._http.put(`http://localhost:3000/players/${id}`,data);
   }
 
 

@@ -22,13 +22,19 @@ import {MatNativeDateModule} from "@angular/material/core";
 import {MatRadioModule} from "@angular/material/radio";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatDialogModule} from "@angular/material/dialog";
+import { SeePlayerComponent } from './components/see.player/see.player.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatGridListModule} from "@angular/material/grid-list";
+import { EditPlayerComponent } from './components/edit.player/edit.player.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TablePlayersComponent,
-    AddUserComponent
+    AddUserComponent,
+    SeePlayerComponent,
+    EditPlayerComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +56,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatRadioModule,
     ReactiveFormsModule,
     MatDialogModule,
+    MatCardModule,
+    MatGridListModule,
 
   ],
   providers: [],

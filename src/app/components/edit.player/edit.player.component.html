@@ -1,0 +1,53 @@
+
+<main>
+  <div class="container">
+    <form [formGroup]="form" (ngSubmit)="aditPlayer()" class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>First Name</mat-label>
+        <input matInput type="text" placeholder="" formControlName="name" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" placeholder="" formControlName="lastName" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Dorsal</mat-label>
+        <input matInput type="number" placeholder="" formControlName="dorsal" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Club</mat-label>
+        <input matInput type="text" placeholder="" formControlName="club" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Country</mat-label>
+        <input matInput type="text" placeholder="" formControlName="country" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Date of birth</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="birthdate" required>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-radio-group aria-label="Select an option" formControlName="sex">
+        <mat-label><b>Gender</b></mat-label>
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-radio-button value="others">Others</mat-radio-button>
+      </mat-radio-group>
+
+      <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button [disabled]="form.invalid" mat-raised-button color="primary" type="submit">Save</button>
+      </div>
+
+    </form>
+
+  </div>
+</main>

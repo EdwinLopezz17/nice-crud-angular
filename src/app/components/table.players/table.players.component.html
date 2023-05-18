@@ -58,10 +58,10 @@
         <ng-container matColumnDef="actions" >
           <th mat-header-cell *matHeaderCellDef>Actions</th>
           <td mat-cell *matCellDef="let element"  style="text-align: right" class="actions">
-            <a class="pointer" style="color:lightseagreen" matTooltip="See User">
+            <a class="pointer" routerLink='/seeplayer/{{element.id}}' style="color:lightseagreen" matTooltip="See User">
               <mat-icon>search</mat-icon>
             </a>
-            <a class="pointer" style="color: limegreen" matTooltip="Edit User">
+            <a class="pointer" routerLink="/editplayer/{{element.id}}" style="color: limegreen" matTooltip="Edit User">
               <mat-icon>edit</mat-icon>
             </a>
             <a class="pointer" (click)="deleteUser(element.id)" style="color:orangered" matTooltip="Delete USer">
