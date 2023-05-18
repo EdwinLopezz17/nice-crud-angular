@@ -1,12 +1,12 @@
 
 
 <div class="container">
-  <mat-toolbar>
-    <span class="example-spacer">Users</span>
+  <mat-toolbar style="color: black">
+    <span class="example-spacer">Players</span>
   </mat-toolbar>
 
   <div *ngIf="listPlayers.length>0">
-    <mat-form-field>
+    <mat-form-field  style="width: 100%">
       <mat-label>Filter</mat-label>
       <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
     </mat-form-field>
@@ -57,7 +57,7 @@
 
         <ng-container matColumnDef="actions" >
           <th mat-header-cell *matHeaderCellDef>Actions</th>
-          <td mat-cell *matCellDef="let element"  style="text-align: right">
+          <td mat-cell *matCellDef="let element"  style="text-align: right" class="actions">
             <a class="pointer" style="color:lightseagreen" matTooltip="See User">
               <mat-icon>search</mat-icon>
             </a>

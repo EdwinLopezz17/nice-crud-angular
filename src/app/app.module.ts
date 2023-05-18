@@ -16,12 +16,19 @@ import {MatInputModule} from "@angular/material/input";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import { AddUserComponent } from './components/add.user/add.user.component';
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
+import {MatRadioModule} from "@angular/material/radio";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatDialogModule} from "@angular/material/dialog";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TablePlayersComponent
+    TablePlayersComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +45,11 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatFormFieldModule,
     MatSnackBarModule,
     MatTooltipModule,
-
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRadioModule,
+    ReactiveFormsModule,
+    MatDialogModule,
 
   ],
   providers: [],

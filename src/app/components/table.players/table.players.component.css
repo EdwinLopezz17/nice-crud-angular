@@ -1,0 +1,10 @@
+
+
+.container{
+  width: 90vw;
+  margin: auto;
+}
+.actions{
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -17,4 +17,10 @@ export class PlayersService {
   deletePlayerById(id:number){
     return this._http.delete(`http://localhost:3000/players/${id}`)
   }
+
+  addPlayer(data:Player){
+    return this._http.post('http://localhost:3000/players',data);
+  }
+
+
 }
